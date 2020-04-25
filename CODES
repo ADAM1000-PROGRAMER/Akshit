@@ -1,0 +1,153 @@
+# dictionary code
+
+
+
+    from time import sleep
+
+    try:
+        d1={"sharp":"intelligent Brain","handsome":"good looking","chop":"cut karna","fetch":"bring"}
+        print("enter any following word to get its meaning \n 1.(sharp) \n 2.(chop) \n 3.(handsome) \n 4.(fetch)" )
+        x=input()
+        print("do you want the the meaning of the selected word  = ",str(x),"(yes or no)")
+        y=input()
+        if y == ("yes") or y == ("no"):
+            print("Processing...",str(y))
+            sleep(1)
+            d1={"sharp":"entelligent Brain","handsome":"good looking","chop":"cut karna","fetch":"bring"}
+            print(d1[x])
+        else:
+            print ("Yes ya no likh")
+
+    except KeyError:
+        print("in valid input!")
+
+
+
+
+
+# faulty calculater
+
+from time import sleep
+print("enter your first number")
+x=int(input())
+print("you entered : ",x)
+print("enter your second no.")
+y=int(input())
+print("you entered : ",y)
+print("which operation do you want to perform with these two numbers.\n1.type (1) to (multiply)\n2.type (2) to (devide)\n3.type (3) to (plus)\n4.type (4) to (minus)")
+z=int(input())
+if z==1:
+    print("(you want to multiply)",(y),"from",(x))
+elif z==2:
+    print("(you want to devide)", (y),"from" ,(x) )
+elif z==3:
+    print("(you want to add)", (y),"from", (x))
+elif z==4:
+    print("(you want to subtract)", y,"from", x)
+else:
+    print("invalid input! try again!")
+print("\n\nprocessing........ ")
+sleep(1)
+print("\n\nplease wait.....")
+sleep(1)
+if z==1:
+    if x==45 and y==3 or y==45 and x==3:
+        print("wrong Ans = 555")
+
+    else:
+        print("Ans = ",x*y)
+elif z==2:
+    if x==56 and y==6 or y==56 and x==6:
+        print("wrong Ans = 4")
+    else:
+        print("Ans =", x/y)
+
+elif z==3:
+    if x==56 and y==9 or y==56 and x==9:
+        print("wrong Ans = 77")
+    else:
+        print("Ans =", x+y)
+elif z==4:
+    print("Ans = ",x-y)
+
+else:
+    print("invalid input! try again!")
+
+#driving licence code
+
+print("type your age to know weather you are aligable to drive a car or not ")
+x=int(input())
+print("processing..........\n\nchecking goverment policies")
+
+if x>65:
+    print("(age not valid)")
+elif x==18:
+    print("(sorry we can't tell you without having proper medical check up of your body)")
+elif x>18:
+    print("(yes ligally you are allowed to drive and to get a drving licence)")
+else:
+    print("(sorry you are not ligally allowed to get a driving licence)")
+
+
+# Table Game
+
+from time import sleep
+print("hello welcome to jarvis.First of all enter your name ")
+y = str(input())
+print("nice to meet you ", y,"now let's start game.😁😁👍\n\n ")
+sleep(2)
+while (True):
+    x = int(input("enter mutiples of 20 till you reached a number greater than two :- "))
+    if x>=100:
+        print("please wait.....")
+        sleep(2)
+        print("\n\n(congrats 😊😁 you entered a number equal to 100)")
+        break
+    else:
+        continue
+
+# Guessing Game
+
+
+n = 0
+print("hello welcome to Jarvis . First of all tell me your name\n\n")
+z=str(input())
+print("\n\nnice to meet you😊👍😁😉 :" , z, "now lets play the game\n\n")
+print("\nthis is a gussing game and you have to guess any no. if it will as same as hidden no. you will win else lost")
+print("\ndo you want a hint (type [1] for Yes and [2] for No) \n[remember: you will get only 9 try to guess]")
+g=int(input())
+
+if g==1:
+    print("the hidden no. lie between 1 and 40 \n now guess your no.👇")
+if g==2:
+    print("ok, As you wish.\n guess your no.👇")
+
+from time import sleep
+while (True):
+    x = int(input())
+
+
+    if x < 27:
+        print("hidden number is bigger than this. try Again!! you can do it")
+        n = n + 1
+        print("\nnow you left with")
+        print(9-n,"guesses")
+    if x>27:
+        print("hidden no. is smaller than this")
+        n = n+1
+        print("now you left with " )
+        print(9-n,"guesses")
+    if x==27:
+        print("please wait.....")
+        sleep(1)
+        print("\n\nprocessing.....")
+        sleep(2)
+        print("\nSuperb! you got it . That's the sprit . That's the no.")
+        print("\n{you were able to guess this no. in",n,"attempts","Goog Job!!!😁🤩🙂👍}" )
+        break
+
+    if n==9:
+        print("\n\nplease wait.......")
+        sleep(2)
+        print("\n\noops you lost your attemps are completed")
+        break
